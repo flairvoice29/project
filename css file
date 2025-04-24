@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+/* Container for the main content */
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Label and text area styles */
+label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Result message styles */
+.result {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.result span {
+    color: #28a745; /* Green color for 'Human-written' */
+}
+
+.result.ai {
+    color: #dc3545; /* Red color for 'AI-generated' */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    textarea {
+        font-size: 1em;
+    }
+    button {
+        font-size: 1.1em;
+    }
+}
